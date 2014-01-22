@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru" ng-app="flacky">
+    <head>
+        <meta charset="utf-8">
+        <title>Flacky - Flexible layout constructor</title>
+
+        <!-- compiled CSS -->
+        <% styles.forEach( function ( file ) { %>
+        <link rel="stylesheet" type="text/css" href="/<%= file %>" />
+        <% }); %>
+
+        <!-- compiled JavaScript -->
+        <% scripts.forEach( function ( file ) { %>
+        <script type="text/javascript" src="/<%= file %>"></script>
+        <% }); %>
+    </head>
+    <body>
+        <header></header>
+        <main ng-controller="FlackyController">
+            <x-flacky-viewport></x-flacky-viewport>
+            <x-flacky-toolbar></x-flacky-toolbar>
+        </main>
+        <footer></footer>
+    </body>
+</html>

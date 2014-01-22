@@ -1,0 +1,6 @@
+<div class="flacky-viewport panel panel-default {{ page.layout }}"
+     ng-class="{ 'flacky-viewport--show-spacing':show_spacing,
+                 'flacky-viewport--show-borders':show_borders,
+                 'flacky-viewport--show-captions':show_captions}">
+    <x-flacky-block ng-repeat="(id, block) in page.blocks"></x-flacky-block>
+</div>

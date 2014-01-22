@@ -1,0 +1,40 @@
+<table>
+    <tr>
+        <td colspan="2">
+            <button id="remove-block" class="btn btn-danger btn-xs" ng-if="!blockprop.nodelete" ng-click="deleteBlock()">Удалить блок</button>
+        </td>
+    </tr>
+    <tr>
+        <td><label>ID</label></td>
+        <td><input type="text" pattern="[a-zA-Z][a-zA-Z0-9_-]*" ng-model="blockprop.id"></td>
+    </tr>
+    <tr>
+        <td>Направление</td>
+        <td>
+            <label>Горизонтальное <input type="radio" name="layout" value="hlayout" ng-model="blockprop.layout"></label>
+            <label>Вертикальное <input type="radio" name="layout" value="vlayout" ng-model="blockprop.layout"></label>
+        </td>
+    </tr>
+    <tr>
+        <td><label>Ширина</label></td>
+        <td><input type="number" ng-model="blockprop.width"></td>
+    </tr>
+    <tr>
+        <td><label>Высота</label></td>
+        <td><input type="number" ng-model="blockprop.height"></td>
+    </tr>
+    <tr>
+        <td><label>Растяжение</label></td>
+        <td>
+            <select ng-model="blockprop.stretch">
+                <option value="">0</option>
+                <option value="stretch-1">1</option>
+                <option value="stretch-2">2</option>
+                <option value="stretch-3">3</option>
+                <option value="stretch-4">4</option>
+                <option value="stretch-5">5</option>
+                <option value="stretch-6">6</option>
+            </select>
+        </td>
+    </tr>
+</table>

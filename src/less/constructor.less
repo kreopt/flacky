@@ -1,0 +1,49 @@
+.flacky-toolbar{
+  min-width: 200px;
+  width: 200px;
+  margin: 0;
+  background: #fff;
+}
+.flacky-viewport{
+  flex-grow: 1;
+  margin: 0 5px;
+  background: #fff;
+}
+.flacky-block{
+  cursor: pointer;
+  transition: margin 0.5s, padding 0.5s;
+  background: rgba(255,255,255,0.7);
+  position: relative;
+}
+.flacky-block-caption{
+  position: absolute;
+  top: -6px;
+  right: 10px;
+  font: 8px Arial;
+  color: red;
+  padding: 0 4px;
+  border-radius: 2px;
+  background: #fff;
+  border: 1px solid;
+  display: none;
+}
+.flacky-viewport--show-spacing .flacky-block{
+  margin: 5px;
+  padding: 5px;
+}
+.flacky-viewport--show-borders .flacky-block{
+  border: 1px dashed #999;
+  border-radius: 4px;
+}
+.flacky-viewport--show-captions .flacky-block-caption{
+  display: block;
+}
+.flacky-block--highlight{
+  background-image: linear-gradient(to bottom, #fffbde 0%, #fffacd 40%, #fffcef 100%), linear-gradient(to bottom, #abdffb 0%, #89bfea 100%);
+  background-clip: content-box, padding-box;
+}
+.flacky-block--highlight > .flacky-block-caption{
+  background: #689dea;
+  color: #fff;
+}
+@import "toolbar";

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru" ng-app="flacky">
+    <head>
+        <meta charset="utf-8">
+        <title>Flacky - Flexible layout constructor</title>
+
+        <!-- compiled CSS -->
+        
+        <link rel="stylesheet" type="text/css" href="/assets/flacky-0.0.1.css" />
+        
+
+        <!-- compiled JavaScript -->
+        
+        <script type="text/javascript" src="/vendor/angular/angular.js"></script>
+        
+        <script type="text/javascript" src="/vendor/ui-bootstrap-0.7.0.min.js"></script>
+        
+        <script type="text/javascript" src="/vendor/ui-bootstrap-tpls-0.7.0.min.js"></script>
+        
+        <script type="text/javascript" src="/vendor/angular-translate.min.js"></script>
+        
+        <script type="text/javascript" src="/src/app/app.js"></script>
+        
+        <script type="text/javascript" src="/src/app/block_properties/block_properties.js"></script>
+        
+        <script type="text/javascript" src="/src/app/configurator.js"></script>
+        
+        <script type="text/javascript" src="/src/app/flacky_controller.js"></script>
+        
+        <script type="text/javascript" src="/src/app/toolbar/i18n.js"></script>
+        
+        <script type="text/javascript" src="/src/app/toolbar/toolbar.js"></script>
+        
+        <script type="text/javascript" src="/src/app/viewport/viewport.js"></script>
+        
+        <script type="text/javascript" src="/src/common/test_component/test_component.js"></script>
+        
+        <script type="text/javascript" src="/templates-common.js"></script>
+        
+        <script type="text/javascript" src="/templates-app.js"></script>
+        
+    </head>
+    <body>
+        <header></header>
+        <main ng-controller="FlackyController">
+            <x-flacky-viewport></x-flacky-viewport>
+            <x-flacky-toolbar></x-flacky-toolbar>
+        </main>
+        <footer></footer>
+    </body>
+</html>

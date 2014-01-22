@@ -1,0 +1,13 @@
+<aside class="flacky-toolbar panel panel-default" ng-controller="ToolbarController">
+    <div class="panel-body">
+        <div><input type="checkbox" id="toggle_spacing" ng-model="show_spacing" checked><label for="toggle_spacing">{{ 'SHOW_SPACING' | translate }}</label></div>
+        <div><input type="checkbox" id="toggle_borders" ng-model="show_borders" checked><label for="toggle_borders">{{ 'SHOW_BORDERS' | translate }}</label></div>
+        <div><input type="checkbox" id="toggle_captions" ng-model="show_captions" checked><label for="toggle_captions">{{ 'SHOW_CAPTIONS' | translate }}</label></div>
+        <button class="btn btn-success btn-xs" ng-click="openAddComponentDialog()">{{ 'ADD_COMPONENT' | translate }}</button>
+        <button class="btn btn-success btn-xs" ng-click="openAddDialog()">{{ 'ADD_BLOCK' | translate }}</button>
+        <div id="block-config" class="block-config">
+            <x-flacky-block-properties></x-flacky-block-properties>
+        </div>
+        <button id="gen-html" class="btn btn-success btn-xs">{{ 'GENERATE' | translate }} HTML</button>
+    </div>
+</aside>

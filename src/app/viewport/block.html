@@ -1,0 +1,7 @@
+<div class="flacky-block {{ block.stretch }} {{ block.layout }}"
+     data-id="{{ id }}"
+     ng-click="selectBlock($event)"
+     ng-class="{'flacky-block--highlight':block.selected}">
+    <div class="flacky-block-caption">{{ block.id }}</div>
+    <x-flacky-block-item ng-if="!block.component" ng-repeat="(id, block) in block.blocks"></x-flacky-block-item>
+</div>

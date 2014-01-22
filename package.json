@@ -1,0 +1,28 @@
+{
+  "name": "flacky",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "jade": "*"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-recess": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-less": "*",
+    "grunt-karma": "*",
+    "grunt-ngmin": "*",
+    "grunt-html2js": "*",
+    "grunt-conventional-changelog": "*",
+    "grunt-bump": "*"
+  }
+}
